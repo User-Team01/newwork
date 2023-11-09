@@ -59,7 +59,7 @@ public class librarymenu extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        HomePagePanel = new javax.swing.JPanel();
+        LMNdashboard = new javax.swing.JPanel();
         DesignOfHomePage = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
@@ -85,7 +85,6 @@ public class librarymenu extends javax.swing.JFrame {
         jLabel28 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         jLabel29 = new javax.swing.JLabel();
-        lMSDashboardpanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -251,6 +250,7 @@ public class librarymenu extends javax.swing.JFrame {
         BasePanel.add(OpeningPanel, "card2");
 
         DesignPanel.setBackground(new java.awt.Color(255, 255, 255));
+        DesignPanel.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
 
         jPanel1.setBackground(new java.awt.Color(153, 204, 255));
 
@@ -384,6 +384,7 @@ public class librarymenu extends javax.swing.JFrame {
         jLabel14.setText("Manage Books");
 
         jSeparator1.setForeground(new java.awt.Color(255, 102, 102));
+        jSeparator1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -706,35 +707,22 @@ public class librarymenu extends javax.swing.JFrame {
                 .addContainerGap(124, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout HomePagePanelLayout = new javax.swing.GroupLayout(HomePagePanel);
-        HomePagePanel.setLayout(HomePagePanelLayout);
-        HomePagePanelLayout.setHorizontalGroup(
-            HomePagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(HomePagePanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout LMNdashboardLayout = new javax.swing.GroupLayout(LMNdashboard);
+        LMNdashboard.setLayout(LMNdashboardLayout);
+        LMNdashboardLayout.setHorizontalGroup(
+            LMNdashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(LMNdashboardLayout.createSequentialGroup()
                 .addComponent(DesignOfHomePage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
-        HomePagePanelLayout.setVerticalGroup(
-            HomePagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, HomePagePanelLayout.createSequentialGroup()
+        LMNdashboardLayout.setVerticalGroup(
+            LMNdashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, LMNdashboardLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(DesignOfHomePage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        BasePanel.add(HomePagePanel, "card2");
-
-        javax.swing.GroupLayout lMSDashboardpanelLayout = new javax.swing.GroupLayout(lMSDashboardpanel);
-        lMSDashboardpanel.setLayout(lMSDashboardpanelLayout);
-        lMSDashboardpanelLayout.setHorizontalGroup(
-            lMSDashboardpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1383, Short.MAX_VALUE)
-        );
-        lMSDashboardpanelLayout.setVerticalGroup(
-            lMSDashboardpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 775, Short.MAX_VALUE)
-        );
-
-        BasePanel.add(lMSDashboardpanel, "card3");
+        BasePanel.add(LMNdashboard, "card2");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -812,7 +800,7 @@ public class librarymenu extends javax.swing.JFrame {
     private javax.swing.JTextField BookNameTxt2;
     private javax.swing.JPanel DesignOfHomePage;
     private javax.swing.JPanel DesignPanel;
-    private javax.swing.JPanel HomePagePanel;
+    private javax.swing.JPanel LMNdashboard;
     private javax.swing.JPanel ManageBooksPanel;
     private javax.swing.JPanel OpeningPanel;
     private javax.swing.JButton jButton1;
@@ -870,7 +858,6 @@ public class librarymenu extends javax.swing.JFrame {
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
-    private javax.swing.JPanel lMSDashboardpanel;
     private java.awt.Panel panel1;
     private java.awt.Panel panel2;
     // End of variables declaration//GEN-END:variables
